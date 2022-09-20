@@ -1,1 +1,24 @@
-# numbergame
+#!/bin/bash
+echo -p "Player 1. please enter your guess: "
+read player1
+echo -p "Player 2, please enter your guess: "
+read player2
+if [[ $player1 == $player2 ]];
+then
+   echo "Its a Tie"
+elif [$player1 ==  "rock" && $player2 == "scissors"]then
+   echo "Player 1 Wins"
+elif [$player1 == "sissors" && $player2 == "rock"]then
+   echo "Player 2 Wins"
+elif [$player1 == "scissors" && $player2 == "paper"]then
+   echo "Player 1 Wins"
+elif [$player1 == "paper" && $player2 == "scissors"]then
+   echo "Player 2 Wins"
+elif [$player1 == "paper" && $player2 == "rock"]then
+   echo "Player 1 Wins"
+elif [$player1 = "rock" && $player2 == "paper"]then
+   echo "Player 2 Wins"
+else
+   echo "There was an error please try again"
+fi
+~              
