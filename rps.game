@@ -21,4 +21,4 @@ elif [$player1 = "rock" && $player2 == "paper"]then
 else
    echo "There was an error please try again"
 fi
-~              
+              
